@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Jezz salad</title>
 </head>
 <body>
     <header>
         <nav>
-            <h2>Jezz 
-                <span class="orange">salad</span>
+            <h2>
+                <span class="orange">Jezz</span>
+               salad
             </h2>
             <a href="#">Home</a>
             <a href="#">Menu</a>
             <a href="#">Contact</a>
             <a href="#">About us</a>
-            <button class="prm-btn">sign</button>
+            <button class="prm-btn">Sign</button>
         </nav>
     </header>
 
@@ -24,18 +29,18 @@
         <section class="main-section">
             <aside>
                 <div class="banner">
-                    <h3>#1 Best Healthy Salad</h3>
+                    <h5>#1 Best Healthy Salad</h5>
                 </div>
                 
-                <h2>
-                    Skip The Diet, 
+                <h1 class="title">
+                    <span class="orange">Skip</span> The Diet, 
                     Just Eat Healthy 
                     With Jez Salad
-                </h2>
-                <h5>
+                </h1>
+                <h5 class="small gray">
                     Imagine you don't need a diet because we provide healthy and delicious food for you!
                 </h5>
-                <button class="prm-button">
+                <button class="prm-btn smaller">
                     Order food
                 </button>
 
@@ -59,24 +64,28 @@
                 
                 <div class="review">
                     <img class="review-smile" src="./img/ya.svg" alt="smiling face" />
-                    <span class="review-text">Our happy customer</span>
-                    <img class="star" src="./img/Star.svg" alt="star" />
-                    <span class="rating">4.8</span>
-                    <span class="review-amount gray">(1.989) reviews</span>
+                    <div class="review-content">
+                        <span class="review-text">Our happy customer</span>
+                        <div class="review-bottom">
+                            <img class="star" src="./img/Star.svg" alt="star" />
+                            <span class="rating">4.8</span>
+                            <span class="review-amount gray">(1,989 reviews)</span>
+                        </div>
+                    </div>
                 </div>
-
+                
                 <div class="daily-calories">
                     <span class="daily-calories-text">Daily calories</span>
                     <span class="calories-amount">123</span>
                     <div class="histogram">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div><div></div></div>
+                        <div><div></div></div>
+                        <div><div></div></div>
+                        <div><div></div></div>
+                        <div><div></div></div>
+                        <div><div></div></div>
+                        <div><div></div></div>
+                        <div><div></div></div>
                     </div>
                 </div>
 
@@ -87,11 +96,11 @@
         </section>
 
         <section class="second-section">
-            <div>
+            <div class="second-title">
                 <h2>
-                    WHY CHOOSE US 
+                    WHY CHOOSE US FOR
                     <span class="orange">
-                        FOR YOUR HEALTHY FOOD
+                         YOUR HEALTHY FOOD
                     </span>
                 </h2>
 
@@ -242,6 +251,7 @@
                     </span> 
                     AVAILABLE
                 </h2>
+            </div>
 
                 <section class="food-cards">
                     
@@ -279,15 +289,13 @@
                     </article>
 
                 </section>
-            </div>
 
         </section>
 
 
-        <section class="email-subsription">
+        <section class="email-subscription">
 
             <article class="sub-form">
-                <img src="./img/sub-vector.svg" />
                 <p class="orange">
                     Our Subscribe
                 </p>
@@ -302,7 +310,7 @@
                     drop your email below to get daily update about us
                 </p>
 
-                <fomr class="input-with-btn">
+                <form class="input-with-btn">
                     <input type="text" />
                     <button class="prm-btn">
                         Subscribe
@@ -321,7 +329,7 @@
         <main class="footer-main">
 
             <article class="ftr-block">
-                <h2>JezSalad</h2>
+                <h2><span class="orange">Jez</span>Salad</h2>
 
                 <p>
                     Jez Salad is the pioneer of 
@@ -336,35 +344,35 @@
 
             <article class="ftr-block">
                 <p class="orange">JezSalad</p>
-
-                <a href="#"> Menu</a>
-                <a href="#"> Promo</a>
-                <a href="#"> Contact</a>
-                <a href="#"> About Us</a>
-                
+                <a href="#">Menu</a>
+                <a href="#">Promo</a>
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
             </article>
             
-            <article class="ftr-block">
+            <article class="ftr-block contact-info">
                 <p class="orange">JezSalad</p>
-
-                <img src="./img/location.svg" alt="location" />
-                <a href="#"> 8819 Ohio St. South Gate, CA 90280</a>
-                
-                <img src="./img/mail.svg" alt="mail" />
-                <a href="#"> Ourstudio@hello.com</a>
-                
-                <img src="./img/phone.svg" alt="phone" />
-                <a href="#"> +1 386-688-3295</a>
+                <div class="contact-item">
+                    <img src="./img/location.svg" alt="location" />
+                    <a href="#">8819 Ohio St. South Gate, CA 90280</a>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/mail.svg" alt="mail" />
+                    <a href="#">Ourstudio@hello.com</a>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/phone.svg" alt="phone" />
+                    <a href="#">+1 386-688-3295</a>
+                </div>
             </article>
 
             <article class="ftr-block">
-
-                <a href="#"><img src="./img/twitter.svg" alt="twitter"/></a>
-                <a href="#"><img src="./img/li.svg" alt="linkedin"/></a>
-                <a href="#"><img src="./img/instagram.svg" alt="instagram"/></a>
-
+                <div class="social-icons">
+                    <a href="#"><img src="./img/twitter.svg" alt="twitter" /></a>
+                    <a href="#"><img src="./img/li.svg" alt="linkedin" /></a>
+                    <a href="#"><img src="./img/instagram.svg" alt="instagram" /></a>
+                </div>
                 <p>Follow our social media.</p>
-                     
             </article>
 
 

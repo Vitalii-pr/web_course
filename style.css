@@ -1,0 +1,580 @@
+
+*{
+    font-family: 'Poppins';
+    background-color: transparent;
+}
+
+.orange{
+    color: #FB9333;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.prm-btn{
+    border: 0px;
+    border-radius: 100px;
+    padding: 14px 42px;
+    color: white;
+    background-color:#FB9333;
+    font-weight: bold;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.prm-btn:hover{
+    box-shadow: 10px 10px 50px 10px rgb(219, 219, 219);
+
+}
+
+.smaller{
+    width: 60%;
+}
+
+
+nav > a{
+    color: rgb(47, 47, 47);
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+nav > a:hover{
+    color: #FB9333;
+}
+
+.banner{
+    background-color: #FFF0DC;
+    color: #FB9333;
+    display: inline-block;
+    border-radius: 50px;
+    width:36%;
+    text-align: center;
+}
+
+.banner > h5 {
+    margin: 10px;
+    font-weight: normal;
+}
+
+.main-section > aside {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+
+.main-section{
+    background-color: transparent;
+    display: flex;
+
+}
+
+.title {
+    color: #575757;
+    font-size: 5.7em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.with-main-image{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image{
+    width: 80%;
+    height: auto;
+}
+
+.review {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    right: 15em;
+    bottom: 15em;
+    gap: 12px;
+    position: relative;
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px 30px 10px 10px;
+    box-shadow: 10px 10px 50px 10px rgb(206, 206, 206)
+}
+
+.review-smile {
+    width: 20%;
+    height: auto;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column; 
+}
+
+.review-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px; 
+}
+
+.review-bottom {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    font-size: 14px;
+}
+
+.star {
+    width: 16px;
+    height: auto;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+.gray{
+    color: gray;
+}
+
+
+
+.daily-calories {
+    box-shadow: 10px 10px 50px 10px rgb(204, 204, 204);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #333;
+    padding: 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    width: 20%;
+    bottom: 17em;
+    left: 15em;
+}
+
+.daily-calories-text {
+    font-size: 16px;
+}
+
+.calories-amount {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.histogram {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+
+.histogram div {
+    width: 10px; 
+    height: 100%; 
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.histogram > div > div {
+    width: 100%;
+    background: linear-gradient(to top, orange, rgb(255, 211, 130));
+}
+
+.histogram > div:nth-child(1) div {height: 50%;}
+.histogram > div:nth-child(2) div {height: 60%;}
+.histogram > div:nth-child(4) div {height: 40%;}
+.histogram > div:nth-child(3) div {height: 80%;}
+.histogram > div:nth-child(5) div {height: 30%;}
+.histogram > div:nth-child(6) div {height: 40%;}
+.histogram > div:nth-child(7) div {height: 30%;}
+.histogram > div:nth-child(8) div {height: 50%;}
+
+
+.second-section .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+}
+
+
+
+.second-section  .card {
+    background-color: rgba(255, 250, 239, 0.504);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 1em 2em;
+    border: 1px rgba(252, 236, 204, 0.504) solid;
+    border-radius: 3em;
+    transition: box-shadow .2s ease-in-out;
+
+}
+
+.second-section .card:hover{
+    box-shadow: 10px 10px 50px 10px rgb(204, 204, 204);
+}
+.second-section .card > button{
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: auto;
+    background-color: rgba(255, 250, 239, 0.504);
+    border: none;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    color: black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    gap: 5px;
+
+}
+
+.second-section .card > button:hover{
+    background-color: #FB9333;
+    color: white;
+
+}
+
+.second-section .card  button img{
+    fill: black;
+    transition: filter 0.3s ease-in-out;
+}
+
+.second-section .card  button:hover img{
+    filter: brightness(0) invert(1);
+}
+
+.additional-info{
+    width: 70%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.additional-info div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.numbers{
+    font-weight: bold;
+}
+
+.small{
+    font-weight:200;
+}
+
+.second-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.second-title h2{
+    display: inline-block;
+    font-size: 4em;
+    width: 50%;
+    margin-right: 10%;
+}
+
+.second-title .gray{
+    width: 35%;
+    font-size: 1.2em;
+}
+
+.third-section{
+    margin-top: 10em;
+    margin-left: -12%;
+    width: 130%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff5e8;
+    padding: 3% 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.people-review{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    width: 25%;
+    height: 50%;
+    border-radius: 10%;
+}
+
+.people-reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.people-review img {
+    border-radius: 10px;
+    position: relative;
+    top: -40px;
+    left: 30px;
+    object-fit: cover;
+
+}
+
+.people-review div {
+    padding: 10px 20px;
+}
+
+.third-section aside{
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-info{
+    width: 40%;
+}
+
+.aside-info h2{
+    font-size: 4em;
+}
+
+.third-section .people-reviews{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left-right-slider{
+    display: flex;
+    gap: 10px;
+}
+
+.left-right-slider button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc87a;
+    border: none;
+    border-radius: 10%;
+    width: 56px;
+    height: 56px;
+    transition: background-color .2s ease-in-out;
+
+}
+
+.left-right-slider button:hover{
+    background-color: #FB9333;
+}
+
+.menus{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menus .headers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menus p{
+    text-align: center;
+}
+
+.food-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.food-card {
+    position: relative; 
+    width: 350px;
+    height: 520px;
+    border-radius: 50px;
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20px; 
+}
+
+.food-card p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.food-card .price {
+    font-weight: bold;
+    bottom: 50px; 
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.email-subscription {
+    background: linear-gradient(rgba(255, 241, 222, 0.5), rgba(255, 241, 222, 0.5)), 
+    url('./img/sub-vector.svg') center no-repeat;
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    height: 33vh;
+}
+
+
+.email-subscription img {
+    height: auto;
+    border-radius: 15px; 
+    margin-bottom: 20px;
+}
+
+
+
+.email-subscription h2 {
+    display: inline-block;
+    color: #575757;
+    width: 60%;
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.email-subscription p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+.sub-form {
+    width: 100%;
+}
+
+.input-with-btn {
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 30px;
+    padding: 5px 3px;
+    margin: 0 auto;
+}
+
+
+.input-with-btn input {
+    background-color: white;
+    padding: 12px;
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.ftr-block {
+    color:#333;
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+.ftr-block h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ftr-block p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.ftr-block a {
+    color:#333;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
